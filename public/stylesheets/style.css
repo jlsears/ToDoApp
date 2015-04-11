@@ -1,0 +1,80 @@
+
+
+body {
+    background-color: #cccccc;
+}
+
+.title-style: {
+  color: green;
+  text-align: center;
+}
+
+.top-photo {
+    text-align: center;
+}
+
+.center-it {
+  text-align: center;
+}
+
+.top-photo img {
+    border-radius: 15px;
+    border: solid;
+    border-color: white;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.list-name {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.holder-div {
+    margin-top: 20px;
+    background-image: url("http://th09.deviantart.net/fs71/PRE/i/2013/231/a/b/my_neighbor_totoro__totoro_by_grenadewhistle-d6iwwr8.png");
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 600px;
+    background-color: white;
+    color: red;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 25px;
+}
+
+.top-cat {
+  padding-top: 20px;
+}
+
+.bottom-cat {
+  padding-bottom: 20px;
+}
+
+.sides-cat {
+  padding-left: 20px;
+  padding-right: 20px;  
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+keygen, select, button {
+  margin: 0em;
+  font: normal normal normal 13.3333330154419px/normal Arial;
+  color: #008080;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+
