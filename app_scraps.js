@@ -25,14 +25,7 @@ var app = express();
 
 
 // getting-started.js
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function (callback) {
-  console.log("There's a thing!");
-});
 
 //Setting end result web pages the user will see here (jls)
 var routes = require('./routes/index');

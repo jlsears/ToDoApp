@@ -4,9 +4,44 @@ body {
     background-color: #cccccc;
 }
 
+.outermost {
+  margin-left: 20px;
+  margin-top: 60px;
+  color: white;
+}
+
+.headings {
+  font-weight: bold;
+}
+
+.pretty {
+/*  max-width: 75%;
+*/  margin-left: 10%;
+}
+
 .title-style: {
   color: green;
   text-align: center;
+}
+
+.orange {
+  color: orange;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.brown {
+  color: brown;
 }
 
 .top-photo {
@@ -75,6 +110,10 @@ keygen, select, button {
   text-shadow: none;
   display: inline-block;
   text-align: start;
+}
+
+.bottom-div {
+  max-height: 40px;
 }
 
 

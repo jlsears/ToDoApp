@@ -2,20 +2,59 @@
 <html>
 <head>
  <title>Doing</title>
- <link rel='stylesheet' href='/stylesheets/style.css' />
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
+ <link rel='stylesheet' href="/stylesheets/style.css">
 </head>
 <body>
-    <h1><%= greeting %></h1>
-    <ul>  
-        <% tasks.forEach(function(task){ %>
-        <li><%= task.due_date %></li> 
-        <li><%= task.description %></li> 
-        <li><%= task.title %></li> 
-        <li><%=task.priority %></li>
-        <li><%=task.complete %></li>
-        <% }) %>
-    </ul>
+    <div>
+      <div class="outermost">
+        <h1><%= greeting %></h1>
+        <br>
+            <div class="headings">
+              <div class="row pretty">
+                <div class="col-md-1 orange">
+                    <p>Priority</p>
+                </div>
+                <div class="col-md-3 green">
+                    <p>Title</p>
+                </div>
+                <div class="col-md-3 red">
+                    <p>Description</p>
+                </div>
+                <div class="col-md-4 blue">
+                    <p>Due Date</p>
+                </div>
+                <div class="col-md-1 brown">
+                    <p>Complete</p>
+                </div>
+              </div>
+          </div>
+
+          <div>
+              <div class="row pretty">
+                <% tasks.forEach(function(task){ %>
+                <div class="col-md-1 orange">
+                    <%=task.priority %>
+                </div>
+                <div class="col-md-3 green">
+                    <%= task.title %> 
+                </div>
+                <div class="col-md-3 red">
+                    <%= task.description %> 
+                </div>
+                <div class="col-md-4 blue">
+                    <%= task.due_date %> 
+                </div>
+                <div class="col-md-1 brown">
+                    <input type="checkbox">Complete
+                </div>
+                <br>
+                <% }) %>
+              </div>
+          </div>
+          <div class="bottom-div">
+          </div>
+      </div>
+    </div>
 </body>
 </html>
