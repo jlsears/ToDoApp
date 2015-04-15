@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
         if(!err) {
             res.render('todo', {
             greeting: 'Behold: the things that need doing',
-            tasks: task
+            tasks: task,
           });
           console.log(task);
         }else {
@@ -50,10 +50,11 @@ router.post('/', function(req, res) {
       message: "No form results for you!"
       })
     } else {
-      res.render('todo', {
-      title: 'Todo created',
-      greeting: 'Huzzah!',
-      })  
+      // res.render('todo', {
+      // title: 'Todo created',
+      // greeting: 'Huzzah!',
+      // })  
+      res.redirect('todo');
     }
     console.log(task);
   });
